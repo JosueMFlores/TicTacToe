@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#status {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+#startButton,
+#restart {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+#scoreboard {
+    margin-top: 20px;
+}
+
+#scoreboard h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#scoreboard p {
+    font-size: 1.2em;
+}
+
+
+button:disabled,
+select:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
